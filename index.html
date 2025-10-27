@@ -1,198 +1,273 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mundo Autos</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Autos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      /* Agregamos esto para evitar márgenes por defecto */
-      margin: 0; 
-    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* Agregamos esto para evitar márgenes por defecto */
+            margin: 0;
+        }
 
-    /* Header */
-    header {
-      background-color: #666;
-      padding: 30px;
-      text-align: center;
-      font-size: 35px;
-      color: white;
-    }
+        /* Header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
 
-    
-    nav {
-      float: left;
-      width: 10%;
-      /* height: 300px; <-- LÍNEA ELIMINADA */ 
-      background: #ccc;
-      padding: 20px;
-      /* Aseguramos que el nav ocupe al menos la altura de la vista 
+
+        nav {
+            float: left;
+            width: 10%;
+            /* height: 300px; <-- LÍNEA ELIMINADA */
+            background: #ccc;
+            padding: 20px;
+            /* Aseguramos que el nav ocupe al menos la altura de la vista 
          si el contenido es muy corto, pero esto es opcional.
          Para este caso, lo dejaremos que crezca natural. */
-    }
+        }
 
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-    
-    article {
-      float: left;
-      padding: 20px;
-      width: 90%;
-      background-color: #f1f1f1;
-      /* height: 300px; <-- LÍNEA ELIMINADA */
-    }
 
-    /* Limpiar floats */
-    section::after {
-      content: "";
-      display: table;
-      clear: both;
-    }
+        article {
+            float: left;
+            padding: 20px;
+            width: 90%;
+            background-color: #f1f1f1;
+            /* height: 300px; <-- LÍNEA ELIMINADA */
+        }
 
-    /* Footer */
-    footer {
-      background-color: #777;
-      padding: 10px;
-      text-align: center;
-      color: white;
-      /* El footer no debe flotar, así que limpiamos floats antes */
-      clear: both; 
-    }
+        /* Limpiar floats */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
-    /* Responsive */
-    @media (max-width: 600px) {
-      nav, article {
-        width: 100%;
-        height: auto; /* Esto ya estaba bien para responsive */
-      }
-    }
-  </style>
+        /* Footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            /* El footer no debe flotar, así que limpiamos floats antes */
+            clear: both;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+                /* Esto ya estaba bien para responsive */
+            }
+        }
+
+        
+    </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Bienvenido al Mundo Autos</h1>
-  </header>
+    <header>
+        <h1>Bienvenido al Mundo Autos</h1>
+    </header>
 
-  <section>
-    <nav>
-      <ul>
-        <li><a href="#Inicio">Inicio</a></li>
-        <li><a href="#AcercaDe">Acerca de</a></li>
-        <li><a href="#Contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#AcercaDe">Acerca de</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
 
-    <article>
-      <section id="Inicio">
-        <h2>INICIO</h2>
-        <p>Nos alegra tenerte aquí. En nuestra página encontrarás todo lo que necesitas sobre autos: desde los últimos modelos del mercado, reseñas detalladas, comparativas, noticias del mundo automotor, hasta las mejores ofertas en vehículos nuevos y usados.</p>
-        <p>¡Explora, compara y encuentra el auto perfecto para ti!</p>
-      </section>
-    </article>
-  </section>
+        <article>
+            <section id="Inicio">
+                <h2>INICIO</h2>
+                <p>Nos alegra tenerte aquí. En nuestra página encontrarás todo lo que necesitas sobre autos: desde los
+                    últimos modelos del mercado, reseñas detalladas, comparativas, noticias del mundo automotor, hasta
+                    las mejores ofertas en vehículos nuevos y usados.</p>
+                <p>¡Explora, compara y encuentra el auto perfecto para ti!</p>
+            </section>
+        </article>
+    </section>
 
-  <section>
-    <nav>
-      </nav>
+    <section>
+        <nav>
+        </nav>
 
-    <article>
-      <section id="AcercaDe">
-        <h2>ACERCA DE</h2>
-        <p>En Mundo Autos, compartimos una pasión: los autos. Nacimos con el objetivo de ofrecer un espacio confiable, actualizado y fácil de usar para todos los amantes del mundo automotor.</p>
-        <p>Información clara y precisa, comparativas imparciales, noticias del sector y asesoría personalizada.</p>
-        <p>Gracias por confiar en nosotros.</p>
-      </section>
-    </article>
-  </section>
+        <article>
+            <section id="AcercaDe">
+                <h2>ACERCA DE</h2>
+                <p>En Mundo Autos, compartimos una pasión: los autos. Nacimos con el objetivo de ofrecer un espacio
+                    confiable, actualizado y fácil de usar para todos los amantes del mundo automotor.</p>
+                <p>Información clara y precisa, comparativas imparciales, noticias del sector y asesoría personalizada.
+                </p>
+                <p>Gracias por confiar en nosotros.</p>
+            </section>
+        </article>
+    </section>
 
-  <section>
-    <nav>
-      </nav>
+    <section>
+        <nav>
+        </nav>
 
-    <article>
-      <h2>Autos que Ofrecemos</h2>
-      <table border="1" width="100%">
-        <tr>
-          <th>Nombre Auto</th>
-          <th>Marca del Auto</th>
-          <th>Precio</th>
-          <th>Imagen</th>
-        </tr>
-        <tr>
-          <td>Camaro</td>
-          <td>Chevrolet</td>
-          <td>$75,000</td>
-          <td><img src="https://media.gq.com.mx/photos/647fbfc127429b28ca35ada7/4:3/w_2176,h_1632,c_limit/Chevrolet_Camaro_SS_Collectors_Edition.jpg" width="100"></td>
-        </tr>
-        <tr>
-          <td>Mustang GT 500 Shelby</td>
-          <td>Ford Performance</td>
-          <td>$85,000</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>Urus</td>
-          <td>Lamborghini</td>
-          <td>$270,000</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>X6 Competition</td>
-          <td>BMW</td>
-          <td>$150,000</td>
-          <td><img src="https://www.stratstone.com/-/media/stratstone/bmw/new-cars/x6-m-competition/2023/bmw-x6-m-competition-driving-front-720x405px.ashx" width="100"></td>
-        </tr>
-        <tr>
-          <td>F-150 Raptor</td>
-          <td>Ford</td>
-          <td>$98,000</td>
-          <td>—</td>
-        </tr>
-      </table>
-    </article>
-  </section>
+        <article>
+            <h2>Autos que Ofrecemos</h2>
+            <table border="1" width="100%">
+                <tr>
+                    <th>Nombre Auto</th>
+                    <th>Marca del Auto</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                </tr>
+                <tr>
+                    <td>Camaro</td>
+                    <td>Chevrolet</td>
+                    <td>$75,000</td>
+                    <td><img src="https://media.gq.com.mx/photos/647fbfc127429b28ca35ada7/4:3/w_2176,h_1632,c_limit/Chevrolet_Camaro_SS_Collectors_Edition.jpg"
+                            width="100"></td>
+                </tr>
+                <tr>
+                    <td>Mustang GT 500 Shelby</td>
+                    <td>Ford Performance</td>
+                    <td>$85,000</td>
+                    <td><img src="https://cdn.motor1.com/images/mgl/9mZpXv/s1/2020-2022-ford-mustang-shelby-gt500kr.jpg"
+                            width="100"></td>
+                </tr>
+                <tr>
+                    <td>Urus</td>
+                    <td>Lamborghini</td>
+                    <td>$270,000</td>
+                    <td><img src="https://automagazine.ec/wp-content/uploads/2021/04/Lamborghini-Urus-800x445.jpg"
+                            width="100"></td>
+                </tr>
+                <tr>
+                    <td>X6 Competition</td>
+                    <td>BMW</td>
+                    <td>$150,000</td>
+                    <td><img src="https://www.stratstone.com/-/media/stratstone/bmw/new-cars/x6-m-competition/2023/bmw-x6-m-competition-driving-front-720x405px.ashx"
+                            width="100"></td>
+                </tr>
+                <tr>
+                    <td>F-150 Raptor</td>
+                    <td>Ford</td>
+                    <td>$98,000</td>
+                    <td><img src="https://weudealerimagesprd.blob.core.windows.net/br1109/product/gallery/ford-ecuador-orgu-f-150-raptor-diseno.jpg"
+                            width="100"></td>
+                </tr>
+            </table>
+        </article>
+    </section>
 
-  <section>
-    <nav>
-      </nav>
+    <section>
+        <nav>
+        </nav>
 
-    <article>
-      <h2>Multimedia</h2>
-      <p>Disfruta de nuestro contenido multimedia.</p>
+        <article>
+            <h2>Multimedia</h2>
+            <p>Disfruta de nuestro contenido multimedia.</p>
 
-      <h3>Video Destacado (YouTube)</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/bBKZZj8JFXY?si=IEQ7WhYiv8KtgLBd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Video Destacado (YouTube)</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bBKZZj8JFXY?si=IEQ7WhYiv8KtgLBd"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-      <h3>Video Local</h3>
-      <video width="100%" controls>
-        <source src="ruta/a/tu_video.mp4" type="video/mp4">
-        Tu navegador no soporta el tag de video.
-      </video>
+            <h3>Video Local</h3>
+            <video class="video" width="560" height="315" controls>
+                <source src="Multimedia/VideosShelby.mp4" type="video/mp4">
+                Tu navegador no soporta el tag de video.
+            </video>
 
-      <h3>Audio (Podcast/Música)</h3>
-      <audio controls style="width: 100%;">
-        <source src="ruta/a/tu_audio.mp3" type="audio/mpeg">
-        Tu navegador no soporta el tag de audio.
-      </audio>
+            <h3>Audio (Podcast/Música)</h3>
+            <audio controls style="width: 100%;">
+                <source src="Multimedia/AudioShelby.mp3" type="audio/mp3">
+                Tu navegador no soporta el tag de audio.
+            </audio>
 
-    </article>
-  </section>
+<h2>🏁 ¡Únete a la Comunidad!</h2>
+<p>Comparte tu pasión por los autos con nosotros.</p>
 
-  <footer>
+<form action="/ruta-para-procesar-formulario.php">
+
+  <fieldset>
+    <legend>Tus Datos</legend>
+
+    <label for="fname">Nombre:</label><br>
+    <input type="text" id="fname" name="nombre" placeholder="Tu nombre"><br>
     
-  <h2 id="Contacto">CONTACTO</h2> <p>Aguilar Mario<br>Tel: 0981674925</p>
-  <p><a href="mailto:maaguilar17@espe.edu.ec">Contáctanos</a></p>
-  <p>&copy; 2025 Mundo Autos</p>
-  </footer>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="tu.correo@dominio.com"><br>
+    <br>
+  <input type="submit" value="Enviar">
+
+  </fieldset>
+
+  <fieldset>
+    <legend>¿Cuál es tu estilo preferido?</legend>
+
+    <input type="radio" id="muscle" name="tipo_auto" value="Muscle">
+    <label for="muscle">Muscle Cars (Ej: Mustang, Charger)</label><br>
+    
+    <input type="radio" id="jdm" name="tipo_auto" value="JDM">
+    <label for="jdm">JDM (Ej: Supra, Skyline, RX-7)</label><br>
+    
+    <input type="radio" id="euro" name="tipo_auto" value="Euro">
+    <label for="euro">Europeos (Ej: Porsche, Ferrari, BMW)</label><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>¿Qué te apasiona? (Elige varios)</legend>
+    
+    <input type="checkbox" id="mecanica" name="interes_mecanica" value="si">
+    <label for="mecanica"> Mecánica y Modificaciones</label><br>
+    
+    <input type="checkbox" id="carreras" name="interes_carreras" value="si">
+    <label for="carreras"> Carreras / Track Days</label><br>
+    
+    <input type="checkbox" id="clasicos" name="interes_clasicos" value="si">
+    <label for="clasicos"> Autos Clásicos y Restauración</label><br>
+    
+    <input type="checkbox" id="eventos" name="interes_eventos" value="si">
+    <label for="eventos"> Eventos y Exhibiciones (Car Shows)</label><br>
+  </fieldset>
+
+  <br>
+  <input type="submit" value="Enviar mi Pasión">
+
+</form>
+        </article>
+    </section>
+
+
+
+    <footer>
+       
+
+        <h2 id="Contacto">CONTACTO</h2>
+        <p>Aguilar Mario<br>Tel: 0981674925</p>
+        <p><a href="mailto:maaguilar17@espe.edu.ec">Contáctanos</a></p>
+        <p>&copy; 2025 Mundo Autos</p>
+    </footer>
 
 </body>
+
 </html>
