@@ -1,104 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Autos</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      /* Agregamos esto para evitar márgenes por defecto */
+      margin: 0; 
+    }
+
+    /* Header */
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    
+    nav {
+      float: left;
+      width: 10%;
+      /* height: 300px; <-- LÍNEA ELIMINADA */ 
+      background: #ccc;
+      padding: 20px;
+      /* Aseguramos que el nav ocupe al menos la altura de la vista 
+         si el contenido es muy corto, pero esto es opcional.
+         Para este caso, lo dejaremos que crezca natural. */
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    
+    article {
+      float: left;
+      padding: 20px;
+      width: 90%;
+      background-color: #f1f1f1;
+      /* height: 300px; <-- LÍNEA ELIMINADA */
+    }
+
+    /* Limpiar floats */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      /* El footer no debe flotar, así que limpiamos floats antes */
+      clear: both; 
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto; /* Esto ya estaba bien para responsive */
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
+  <header>
     <h1>Bienvenido al Mundo Autos</h1>
-    </header>
+  </header>
+
+  <section>
     <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#acerca de">Acerca de</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+      <ul>
+        <li><a href="#Inicio">Inicio</a></li>
+        <li><a href="#AcercaDe">Acerca de</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
+      </ul>
     </nav>
 
-    <section id="Inicio">
+    <article>
+      <section id="Inicio">
         <h2>INICIO</h2>
-        <p>Nos alegra tenerte aquí. En nuestra página encontrarás todo lo que necesitas sobre autos: desde los últimos modelos del mercado, reseñas detalladas, comparativas, noticias del mundo automotor, hasta las mejores ofertas en vehículos nuevos y usados.
+        <p>Nos alegra tenerte aquí. En nuestra página encontrarás todo lo que necesitas sobre autos: desde los últimos modelos del mercado, reseñas detalladas, comparativas, noticias del mundo automotor, hasta las mejores ofertas en vehículos nuevos y usados.</p>
+        <p>¡Explora, compara y encuentra el auto perfecto para ti!</p>
+      </section>
+    </article>
+  </section>
 
-Ya seas un amante de los motores, estés buscando tu primer auto, o simplemente quieras mantenerte informado, estás en el lugar correcto.
-¡Explora, compara y encuentra el auto perfecto para ti!</p>
-    </section>
+  <section>
+    <nav>
+      </nav>
 
-    
-    <section id="Acerca de">
+    <article>
+      <section id="AcercaDe">
         <h2>ACERCA DE</h2>
-        <p>En Mundo Autos, compartimos una pasión: los autos. Nacimos con el objetivo de ofrecer un espacio confiable, actualizado y fácil de usar para todos los amantes del mundo automotor, desde los que buscan su primer vehículo hasta los que disfrutan conocer cada detalle técnico de los últimos modelos.
+        <p>En Mundo Autos, compartimos una pasión: los autos. Nacimos con el objetivo de ofrecer un espacio confiable, actualizado y fácil de usar para todos los amantes del mundo automotor.</p>
+        <p>Información clara y precisa, comparativas imparciales, noticias del sector y asesoría personalizada.</p>
+        <p>Gracias por confiar en nosotros.</p>
+      </section>
+    </article>
+  </section>
 
-Nos especializamos en brindar:
+  <section>
+    <nav>
+      </nav>
 
-Información clara y precisa sobre autos nuevos y usados.
+    <article>
+      <h2>Autos que Ofrecemos</h2>
+      <table border="1" width="100%">
+        <tr>
+          <th>Nombre Auto</th>
+          <th>Marca del Auto</th>
+          <th>Precio</th>
+          <th>Imagen</th>
+        </tr>
+        <tr>
+          <td>Camaro</td>
+          <td>Chevrolet</td>
+          <td>$75,000</td>
+          <td><img src="https://media.gq.com.mx/photos/647fbfc127429b28ca35ada7/4:3/w_2176,h_1632,c_limit/Chevrolet_Camaro_SS_Collectors_Edition.jpg" width="100"></td>
+        </tr>
+        <tr>
+          <td>Mustang GT 500 Shelby</td>
+          <td>Ford Performance</td>
+          <td>$85,000</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>Urus</td>
+          <td>Lamborghini</td>
+          <td>$270,000</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>X6 Competition</td>
+          <td>BMW</td>
+          <td>$150,000</td>
+          <td><img src="https://www.stratstone.com/-/media/stratstone/bmw/new-cars/x6-m-competition/2023/bmw-x6-m-competition-driving-front-720x405px.ashx" width="100"></td>
+        </tr>
+        <tr>
+          <td>F-150 Raptor</td>
+          <td>Ford</td>
+          <td>$98,000</td>
+          <td>—</td>
+        </tr>
+      </table>
+    </article>
+  </section>
 
-Comparativas imparciales y análisis detallados.
+  <section>
+    <nav>
+      </nav>
 
-Noticias, tendencias y lanzamientos del sector automotriz.
+    <article>
+      <h2>Multimedia</h2>
+      <p>Disfruta de nuestro contenido multimedia.</p>
 
-Asesoría para ayudarte a tomar la mejor decisión al momento de comprar, vender o cambiar tu vehículo.
+      <h3>Video Destacado (YouTube)</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/bBKZZj8JFXY?si=IEQ7WhYiv8KtgLBd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Nuestro compromiso es ayudarte a encontrar no solo un auto, sino el auto ideal para ti.
-Porque entendemos que un vehículo no es solo un medio de transporte, sino una parte importante de tu estilo de vida.
+      <h3>Video Local</h3>
+      <video width="100%" controls>
+        <source src="ruta/a/tu_video.mp4" type="video/mp4">
+        Tu navegador no soporta el tag de video.
+      </video>
 
-Gracias por confiar en nosotros y ser parte de esta comunidad sobre ruedas.</p>
+      <h3>Audio (Podcast/Música)</h3>
+      <audio controls style="width: 100%;">
+        <source src="ruta/a/tu_audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta el tag de audio.
+      </audio>
 
-</section>
-<section>
-    <h2>Autos que Ofrecemos</h2>
-<table border=1>
-<tr>
- <th>Nombre Auto</th>
- <th>Maca del Auto</th>
- <th>Precio</th>
- <th>Imagen</th>
-</tr>
-<tr>
-    <td>Camaro</td>
-    <td>Chevrolet</td>
-    <td>75.000</td>
-    <td><img src="https://media.gq.com.mx/photos/647fbfc127429b28ca35ada7/4:3/w_2176,h_1632,c_limit/Chevrolet_Camaro_SS_Collectors_Edition.jpg"></td>
-</tr>
-<tr>
-    <td>Mustang GT 500 Shelby</td>
-    <td>Ford Performance</td>
-    <td>85.000</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Urus</td>
-    <td>Lamborghini</td>
-    <td>270.000</td>
-    <td></td>
-</tr>
-<tr>
-    <td>X6 Competition</td>
-    <td>BMW</td>
-    <td>150.000</td>
-    <td><img src="https://www.stratstone.com/-/media/stratstone/bmw/new-cars/x6-m-competition/2023/bmw-x6-m-competition-driving-front-720x405px.ashx"></td>
-</tr>
-<tr>
-    <td>F-150 Raptor</td>
-    <td>Ford</td>
-    <td>98.000</td>
-    <td></td>
-</tr>
-</table>
+    </article>
+  </section>
 
-</section>
-
-
-
-
-        <section id="Contacto">
-        <h2>CONTACTO</h2>
-        <p>Aguilar Mario<br>Tel: 0981674925</br></p>
-        
-        <a href="mailto:maaguilar17@espe.edu.ec">Contactanos</a>
-    </section>
+  <footer>
     
+  <h2 id="Contacto">CONTACTO</h2> <p>Aguilar Mario<br>Tel: 0981674925</p>
+  <p><a href="mailto:maaguilar17@espe.edu.ec">Contáctanos</a></p>
+  <p>&copy; 2025 Mundo Autos</p>
+  </footer>
+
 </body>
 </html>
